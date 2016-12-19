@@ -1,4 +1,4 @@
-# Sppedscanner for slides
+# Speedscanner for slides
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Automatic speedscanner for slides with Espruino Pico
