@@ -40,8 +40,9 @@ VOC to VBAT
 IN1 to A8
 IN2 to B7
 
-Cut the cables to both remotes and connect the right cables to each relay,
-what cables to fit where, you have to figure out your self as this might vary depending of
+Cut the cables to both remotes and connect the right cables to each relay.
+
+Which cables to fit where, you have to figure out your self as this might vary depending of
 the configuration of the remote cables you are using.
 
 Wire up the CC3000 to the Pico: [instructions here](http://www.espruino.com/CC3000)
