@@ -29,11 +29,25 @@ much more detailed project description available there.
 5. A remote shutter cable for said DSLR
 
 6. An old Slide projector with remote controlled feed
+### Basic instuctions, to be updated
+
+Rip out the optics from the slide projector, bolt the projector to a board and a position and fasten a camera bracket to point the macro on the right distance for a nice focal plane on the slide.
+
+Wire the relay module to the Pico:
+GND to GND
+VOC to VBAT
+IN1 to A8
+IN2 to B7
 
 Cut the cables to both remotes and connect the right cables to each relay,
 what cables to fit where, you have to figure out your self as this might vary depending of
-the configuration of the remote cables you are using
+the configuration of the remote cables you are using.
 
+Flash js/script.js onto Pico using [Espruino IDE](http://www.espruino.com/Web+IDE)
+
+Connect to Pico through http://1.2.3.4
+
+Start scanning
 ### Optional upgrade for the projector
 1. 50W led
 
