@@ -1,5 +1,8 @@
 /*  global digitalWrite, A8, B7, save */
 /*  eslint-disable no-unused-vars */
+
+// To be flashed onto espruino using Espruino IDE
+
 var scanTreshold = 1000
 var feedNewPicTreshold = 500
 var takePictureTreshold = 300
@@ -7,11 +10,13 @@ var numberOfPics = 36
 var numberOfScans = 0 // DO NOT CHANGE!
 var scanPics
 
+// Stop and reset counter
 function stopScanning () {
   clearInterval(scanPics)
   numberOfScans = 0
 }
 
+// Close second relay on port B7 for a while
 function takePicture () {
   console.log('Closing B7')
   digitalWrite(B7, true)
@@ -21,6 +26,7 @@ function takePicture () {
   }, takePictureTreshold)
 }
 
+// Close first relay on port A8 for a while
 function feedNewPic () {
   console.log('Closing A8')
   digitalWrite(A8, true)
@@ -31,6 +37,7 @@ function feedNewPic () {
   }, feedNewPicTreshold)
 }
 
+// Start feed/scan loop
 function startScanning () {
   scanPics = setInterval(function () {
     feedNewPic()
@@ -41,6 +48,7 @@ function startScanning () {
   }, scanTreshold)
 }
 
+// Simple ui for start, stop and timing
 function onPageRequest (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'})
   res.write('<html><head><link rel="stylesheet" ' +
@@ -56,6 +64,7 @@ function onPageRequest (req, res) {
   res.end('</body></html>')
 }
 
+// Wifi connection, go to http://1.2.3.4
 var wlan
 function onInit () {
   wlan = require('CC3000').connect()
@@ -68,6 +77,9 @@ function onInit () {
     }
   })
 }
+
+// Disconnect wifi, not used atm
+// wlan.disconnect()
 
 onInit()
 
