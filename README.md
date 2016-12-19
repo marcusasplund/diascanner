@@ -4,6 +4,7 @@
 Dia Scanner with Espruino Pico
 
 A variant of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
+there is a more detailed description available.
 
 ## Hardware used
 
@@ -30,8 +31,6 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 Cut the cables to both remotes and connect the right cables to each relay,
 what cables to fit where, you have to figure out your self as this might vary depending of
 the configuration of the remote cables you are using
-
-For more details, please go to [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/)
 
 ### Optional upgrade for the projector
 1. 50W led
