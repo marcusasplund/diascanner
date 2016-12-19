@@ -6,15 +6,21 @@ Dia Scanner with Espruino Pico
 A variant of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
 
 ## Hardware used
-![alt tag](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+
+![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+
 [Espruino Pico](http://www.espruino.com/Pico) microcontroller
 
 2-channel relay module
-![alt tag](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+
+![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+
 [Buy on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
+
 [Buy on Ebay](http://www.ebay.com/sch/i.html?_nkw=2+channel+relay+module)
 
 A DSLR of your choice with a Macro
+
 A remote shutter cable for said DSLR
 
 An old Dia Projector with a remote control cable
@@ -27,5 +33,7 @@ For more details, please go to [http://www.stockholmviews.com/speedscanner/](htt
 
 ### Optional upgrade
 50W led
+
 [Buy on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
+
 [Buy on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
