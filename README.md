@@ -3,8 +3,8 @@
 
 Dia Scanner with Espruino Pico
 
-A variant of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
-there are a much more detailed project description available.
+A clone of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
+much more detailed project description available there.
 
 ## Hardware used
 
@@ -36,5 +36,4 @@ the configuration of the remote cables you are using
 1. 50W led
 
   * [Buy 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
-
   * [Buy 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
