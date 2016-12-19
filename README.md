@@ -7,13 +7,13 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 
 ## Hardware used
 
-![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg)
 
 [Espruino Pico](http://www.espruino.com/Pico) microcontroller
 
 2-channel relay module
 
-![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/branch/path/to/img.png)
+![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/master/relay.jpg)
 
 [Buy on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
 
