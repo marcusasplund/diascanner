@@ -9,7 +9,7 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 
 [Espruino Pico](http://www.espruino.com/Pico) microcontroller
 
-![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg =100x20)
+![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg=100x20)
 
 2-channel relay module
 
