@@ -1,13 +1,19 @@
 /*  global digitalWrite, A8, B7, save */
 /*  eslint-disable no-unused-vars */
 
-// To be flashed onto espruino using Espruino IDE
+// Flash this code onto espruino using Espruino IDE
 
-var scanTreshold = 1000
+// Treshold for each scanning cycle
+var scanTreshold = 3000
+// Treshold for 'pressing swap slide button'
 var feedNewPicTreshold = 500
+// Treshold for 'pressing shutter button'
 var takePictureTreshold = 300
+// Number of slides in session
 var numberOfPics = 36
+// Counter startindex
 var numberOfScans = 0 // DO NOT CHANGE!
+// Cycle scanning interval function
 var scanPics
 
 // Stop and reset counter
