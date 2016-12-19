@@ -5,8 +5,8 @@
 
 Automatic speedscanner for slides with Espruino Pico
 
-A clone of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
-much more detailed project description available there.
+A js-port of: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
+much more detailed project description available there. 
 
 ## Hardware used
 
