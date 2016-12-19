@@ -11,6 +11,9 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 
 ![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg)
 
+[Adafruit CC3000 wifi breakout board](https://learn.adafruit.com/adafruit-cc3000-wifi/cc3000-breakout)
+This board seems discontinued, but i had one lying around and it is working fine with the Pico. I do not know if there are alternatives for use together with the Pico.
+
 2-channel relay module
 
 ![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/master/relay.jpg)
