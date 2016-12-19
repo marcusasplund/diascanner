@@ -1,4 +1,4 @@
-/*  global digitalWrite, A8, B7, save */
+/*  global digitalWrite, A5, A5, save */
 /*  eslint-disable no-unused-vars */
 
 // Flash this code onto Pico using Espruino IDE
@@ -23,23 +23,23 @@ function stopScanning () {
   numberOfScans = 0
 }
 
-// Close second relay on port B7 for a while
+// Close second relay on port A6 for a while
 function takePicture () {
-  console.log('Closing B7')
-  digitalWrite(B7, true)
+  console.log('Closing A6')
+  digitalWrite(A6, true)
   setTimeout(function () {
-    console.log('Opening B7')
-    digitalWrite(B7, false)
+    console.log('Opening A6')
+    digitalWrite(A6, false)
   }, takePictureTreshold)
 }
 
-// Close first relay on port A8 for a while
+// Close first relay on port A5 for a while
 function feedNewPic () {
-  console.log('Closing A8')
-  digitalWrite(A8, true)
+  console.log('Closing A5')
+  digitalWrite(A5, true)
   setTimeout(function () {
-    console.log('Opening A8')
-    digitalWrite(A8, false)
+    console.log('Opening A5')
+    digitalWrite(A5, false)
     takePicture()
   }, feedNewPicTreshold)
 }
