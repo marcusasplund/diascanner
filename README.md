@@ -16,6 +16,8 @@ much more detailed project description available there.
 
 2. [Adafruit CC3000 wifi breakout board](https://learn.adafruit.com/adafruit-cc3000-wifi/cc3000-breakout)
   
+  ![CC3000 Adafruit](/illustrations/CC3000_adafruit.jpg)
+  
   This board seems discontinued, but i had one lying around and it is working fine with the Pico. I do not know if there are   alternatives for use together with the Pico.
 
 3. 2-channel relay module
