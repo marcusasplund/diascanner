@@ -7,17 +7,17 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 
 ## Hardware used
 
-![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg)
-
 [Espruino Pico](http://www.espruino.com/Pico) microcontroller
+
+![Espruino Pico](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg)
 
 2-channel relay module
 
 ![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/master/relay.jpg)
 
-[Buy on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
+[Buy 2-channel relay module on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
 
-[Buy on Ebay](http://www.ebay.com/sch/i.html?_nkw=2+channel+relay+module)
+[Buy 2-channel relay module on Ebay](http://www.ebay.com/sch/i.html?_nkw=2+channel+relay+module)
 
 A DSLR of your choice with a Macro
 
@@ -34,6 +34,6 @@ For more details, please go to [http://www.stockholmviews.com/speedscanner/](htt
 ### Optional upgrade
 50W led
 
-[Buy on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
+[Buy 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
 
-[Buy on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
+[Buy 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
