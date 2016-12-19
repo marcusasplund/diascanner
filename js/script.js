@@ -27,39 +27,33 @@ function stopScanning () {
   numberOfScans = 0
 }
 
-function closeRelay (args) {
-  console.log('Closing ' + args.pin)
-  digitalWrite(args.pin, false)
-  setTimeout(openRelay, args.treshold, {
-    pin: args.pin,
-    picture: args.picture
-  })
+function closeRelay (relay, treshold) {
+  console.log('Closing ' + relay)
+  digitalWrite(relay, false)
+  setTimeout(function () {
+    openRelay(relay)
+  }, treshold)
 }
 
-function openRelay (args) {
-  console.log('Opening ' + args.pin)
-  digitalWrite(args.pin, true)
-  if (args.picture) {
-    takePicture()
-  }
+function openRelay (relay) {
+  console.log('Opening ' + relay)
+  digitalWrite(relay, true)
 }
 
 // Close second relay on port A6 for a while
 function takePicture () {
-  setTimeout(closeRelay, takePictureTreshold, {
-    pin: 'A6',
-    treshold: takePictureButtonTreshold,
-    picture: false
-  })
+  setTimeout(function () {
+    closeRelay(A6, takePictureButtonTreshold, false)
+  }, takePictureTreshold)
 }
 
-// Close first relay on port A5 for a while
+// Close first relay on port A5 for a while,
+// wait for feeding, then take picture
 function feedNewPic () {
-  setTimeout(closeRelay, feedNewPicTreshold, {
-    pin: 'A5',
-    treshold: feedNewPicButtonTreshold,
-    picture: true
-  })
+  closeRelay(A5, feedNewPicButtonTreshold, true)
+  setTimeout(function () {
+    takePicture()
+  }, feedNewPicTreshold)
 }
 
 // Start feed/scan loop
