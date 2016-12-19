@@ -8,7 +8,8 @@ A variant of model described at: [http://www.stockholmviews.com/speedscanner/](h
 ## Hardware used
 
 [Espruino Pico](http://www.espruino.com/Pico) microcontroller
-<img src="https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg" alt="Espruino Pico" style="width: 200px;"/>(http://www.espruino.com/Pico)
+
+![2-channel relay module](https://raw.githubusercontent.com/marcusasplund/diascanner/master/Pico_angled.jpg)
 
 2-channel relay module
 
