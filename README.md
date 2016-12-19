@@ -32,6 +32,8 @@ much more detailed project description available there.
 
 6. An old Slide projector with remote controlled feed
 
+7. Optional 5v DC powersource for driving the Pico and relays standalone, disconnected from USB
+
 ### Basic instructions (to be updated)
 
 Rip out the optics from the slide projector, bolt the projector to a board and a position and fasten a camera bracket to point the macro on the right distance for a nice focal plane on the slide.
