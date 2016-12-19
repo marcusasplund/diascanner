@@ -1,15 +1,19 @@
-/*  global digitalWrite, A5, A5, save */
+/*  global digitalWrite, A5, A6, save */
 /*  eslint-disable no-unused-vars */
 
 // Flash this code onto Pico using Espruino IDE
 // Link: http://www.espruino.com/Web+IDE
 
 // Treshold for each scanning cycle
-var scanTreshold = 3000
+var scanTreshold = 5000
+// Treshold for swapping slide
+var feedNewPicTreshold = 3000
 // Treshold for 'pressing swap slide button'
-var feedNewPicTreshold = 500
+var feedNewPicButtonTreshold = 500
+// Treshold for taking picture
+var takePictureTreshold = 800
 // Treshold for 'pressing shutter button'
-var takePictureTreshold = 300
+var takePictureButtonTreshold = 300
 // Number of slides in session
 var numberOfPics = 36
 // Counter startindex
@@ -25,22 +29,26 @@ function stopScanning () {
 
 // Close second relay on port A6 for a while
 function takePicture () {
-  console.log('Closing A6')
-  digitalWrite(A6, true)
   setTimeout(function () {
-    console.log('Opening A6')
-    digitalWrite(A6, false)
+    console.log('Closing A6')
+    digitalWrite(A6, true)
+    setTimeout(function () {
+      console.log('Opening A6')
+      digitalWrite(A6, false)
+    }, takePictureButtonTreshold)
   }, takePictureTreshold)
 }
 
 // Close first relay on port A5 for a while
 function feedNewPic () {
-  console.log('Closing A5')
-  digitalWrite(A5, true)
   setTimeout(function () {
-    console.log('Opening A5')
-    digitalWrite(A5, false)
-    takePicture()
+    console.log('Closing A5')
+    digitalWrite(A5, true)
+    setTimeout(function () {
+      console.log('Opening A5')
+      digitalWrite(A5, false)
+      takePicture()
+    }, feedNewPicButtonTreshold)
   }, feedNewPicTreshold)
 }
 
