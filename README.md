@@ -1,7 +1,7 @@
-# Diascanner
+# Sppedscanner for slides
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-Dia Scanner with Espruino Pico
+Automatic speedscanner for slides with Espruino Pico
 
 A clone of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
 much more detailed project description available there.
@@ -26,7 +26,7 @@ much more detailed project description available there.
 
 5. A remote shutter cable for said DSLR
 
-6. An old Dia Projector with a remote control cable
+6. An old Slide projector with remote controlled feed
 
 Cut the cables to both remotes and connect the right cables to each relay,
 what cables to fit where, you have to figure out your self as this might vary depending of
