@@ -41,8 +41,8 @@ Rip out the optics from the slide projector, bolt the projector to a board and a
 Wire the relay module to the Pico:
   * GND to GND
   * VOC to VBAT
-  * IN1 to A8
-  * IN2 to B7
+  * IN1 to A5
+  * IN2 to A6
 
 Cut the cables to both remotes and connect the right cables to each relay.
 
