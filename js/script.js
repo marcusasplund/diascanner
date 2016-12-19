@@ -67,7 +67,7 @@ function startScanning () {
   }, scanTreshold)
 }
 
-// Simple ui for start, stop and timing
+// Simple ui for start, stop and setting number of slides
 function onPageRequest (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'})
   res.write('<html><head><link rel="stylesheet" ' +
