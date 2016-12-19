@@ -34,8 +34,8 @@ the configuration of the remote cables you are using
 For more details, please go to [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/)
 
 ### Optional upgrade for the projector
-50W led
+1. 50W led
 
-[Buy 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
+  * [Buy 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
 
-[Buy 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
+  * [Buy 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
