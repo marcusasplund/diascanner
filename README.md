@@ -4,7 +4,7 @@
 Dia Scanner with Espruino Pico
 
 A variant of model described at: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
-there is a more detailed description available.
+there are a much more detailed project description available.
 
 ## Hardware used
 
