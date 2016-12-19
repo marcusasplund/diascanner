@@ -1,7 +1,8 @@
 /*  global digitalWrite, A8, B7, save */
 /*  eslint-disable no-unused-vars */
 
-// Flash this code onto espruino using Espruino IDE
+// Flash this code onto Pico using Espruino IDE
+// Link: http://www.espruino.com/Web+IDE
 
 // Treshold for each scanning cycle
 var scanTreshold = 3000
