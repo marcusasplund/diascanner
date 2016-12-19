@@ -31,10 +31,10 @@ function stopScanning () {
 function takePicture () {
   setTimeout(function () {
     console.log('Closing A6')
-    digitalWrite(A6, true)
+    digitalWrite(A6, false)
     setTimeout(function () {
       console.log('Opening A6')
-      digitalWrite(A6, false)
+      digitalWrite(A6, true)
     }, takePictureButtonTreshold)
   }, takePictureTreshold)
 }
@@ -43,10 +43,10 @@ function takePicture () {
 function feedNewPic () {
   setTimeout(function () {
     console.log('Closing A5')
-    digitalWrite(A5, true)
+    digitalWrite(A5, false)
     setTimeout(function () {
       console.log('Opening A5')
-      digitalWrite(A5, false)
+      digitalWrite(A5, true)
       takePicture()
     }, feedNewPicButtonTreshold)
   }, feedNewPicTreshold)
