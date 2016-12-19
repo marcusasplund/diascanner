@@ -1,5 +1,6 @@
 # Speedscanner for slides
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/diascanner.svg)](https://github.com/marcusasplund/diascanner/issues)
+
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Automatic speedscanner for slides with Espruino Pico
