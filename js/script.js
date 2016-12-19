@@ -1,5 +1,5 @@
-/*  global digitalWrite, A5, A6, save */
-/*  eslint-disable no-unused-vars */
+/* global digitalWrite, A5, A6, save */
+/* eslint-disable no-unused-vars */
 
 // Flash this code onto Pico using Espruino IDE
 // Link: http://www.espruino.com/Web+IDE
