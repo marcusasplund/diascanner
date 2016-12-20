@@ -36,7 +36,9 @@ much more detailed project description available there.
 
 ### Basic instructions (to be updated)
 
-Rip out the optics from the slide projector, bolt the projector to a board and a position and fasten a camera bracket to point the macro on the right distance for a nice focal plane on the slide.
+Rip out the optics from the slide projector, bolt the projector to a board.
+
+Position and fasten a camera bracket in front of the projector.
 
 Wire the relay module to the Pico:
   * GND to GND
