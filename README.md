@@ -14,7 +14,7 @@ much more detailed project description available there.
 
   ![Espruino Pico](/illustrations/Pico_angled.jpg)
 
-2. [Adafruit CC3000 wifi breakout board](https://learn.adafruit.com/adafruit-cc3000-wifi/cc3000-breakout)
+2. [Adafruit CC3000](https://learn.adafruit.com/adafruit-cc3000-wifi/cc3000-breakout) wifi breakout board
   
   ![CC3000 Adafruit](/illustrations/CC3000_adafruit.jpg)
   
