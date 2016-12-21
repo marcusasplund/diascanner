@@ -60,6 +60,7 @@ function feedNewPic () {
 function startScanning () {
   scanPics = setInterval(function () {
     feedNewPic()
+    document.getElementById('scanned').innerHTML = numberOfScans 
     console.log(numberOfScans + ':' + numberOfPics)
     if (++numberOfScans === numberOfPics) {
       stopScanning()
@@ -72,10 +73,11 @@ function onPageRequest (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'})
   res.write('<html><head><link rel="stylesheet" ' +
   'href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /></head>' +
-  '<body class="container"><h1>Speed scanner</h1><hr><label>Antal bilder' + 
+  '<body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' + 
   '<input class="form-control" id="pictures" max="100" min="1" type="number" value="36" />' +
   '</label><button class="btn btn-success" id="start">Start</button>' +
-  '<button class="btn btn-danger" id="stop">Stop</button>')
+  '<button class="btn btn-danger" id="stop">Stop</button>' +
+  '<p>Slides scanned: <span id="scanned"></span></p>')
   res.write('<script>document.getElementById("pictures").addEventListener("input", ' +
   'function () {numberOfPics = document.getElementById("pictures").value || 36;});' +
   'document.getElementById("start").addEventListener("click", startScanning, false);' +
