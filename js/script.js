@@ -44,6 +44,7 @@ function openRelay (relay) {
 function takePicture () {
   setTimeout(function () {
     closeRelay(A6, takePictureButtonTreshold, false)
+    document.getElementById('scanned').innerHTML = numberOfScans
   }, takePictureTreshold)
 }
 
@@ -60,9 +61,8 @@ function feedNewPic () {
 function startScanning () {
   scanPics = setInterval(function () {
     feedNewPic()
-    document.getElementById('scanned').innerHTML = numberOfScans 
     console.log(numberOfScans + ':' + numberOfPics)
-    if (++numberOfScans === numberOfPics) {
+    if (++numberOfScans >= numberOfPics) {
       stopScanning()
     }
   }, scanTreshold)
