@@ -14,7 +14,7 @@ var feedNewPicButtonTreshold = 500
 var takePictureTreshold = 800
 // Treshold for 'pressing shutter button'
 var takePictureButtonTreshold = 300
-// Number of slides in session
+// Default number of slides in session
 var numberOfPics = 36
 // Counter startindex
 var numberOfScans = 0 // DO NOT CHANGE!
@@ -74,7 +74,7 @@ function onPageRequest (req, res) {
   res.write('<html><head><link rel="stylesheet" ' +
   'href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /></head>' +
   '<body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' + 
-  '<input class="form-control" id="pictures" max="100" min="1" type="number" value="36" />' +
+  '<input class="form-control" id="pictures" max="100" min="1" type="number" value="' + numberOfPics +'" />' +
   '</label><button class="btn btn-success" id="start">Start</button>' +
   '<button class="btn btn-danger" id="stop">Stop</button>' +
   '<p>Slides scanned: <span id="scanned"></span></p>')
