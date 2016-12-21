@@ -57,6 +57,8 @@ Flash js/script.js onto Pico with the [Espruino IDE](http://www.espruino.com/Web
 
 Connect to Pico through http://1.2.3.4
 
+![Espruino Pico](/illustrations/screen.png)
+
 Start scanning
 ### Optional upgrade for the projector
 1. 50W led
