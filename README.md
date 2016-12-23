@@ -46,7 +46,7 @@ Position and fasten a camera bracket in front of the projector.
 Wire the relay module to the Pico, be sure to have neat connections (preferably solder) everywhere.
 
 | Relay module | Espruino |
-| ------------ |----------|
+| ------------ | -------- |
 | GND          | GND      |
 | VOC          | VBAT     |
 | IN1          | A5       |
@@ -61,7 +61,7 @@ Wire up the CC3000 to the Pico: [instructions here](http://www.espruino.com/CC30
 be sure to have neat connections (preferably solder) everywhere.
 
 | RCC3000   | Espruino   |
-| --------- |------------|
+| --------- | ---------- |
 | GND       | GND        |
 | 3v3       | Do not use |
 | VIN       | VBAT       |
