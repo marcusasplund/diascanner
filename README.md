@@ -60,7 +60,7 @@ the configuration of the remote cables you are using.
 Wire up the CC3000 to the Pico: [instructions here](http://www.espruino.com/CC3000),
 be sure to have neat connections (preferably solder) everywhere.
 
-| RCC3000   | Espruino   |
+| CC3000    | Espruino   |
 | --------- | ---------- |
 | GND       | GND        |
 | 3v3       | Do not use |
