@@ -18,7 +18,10 @@ much more detailed project description available there.
   
   ![CC3000 Adafruit](/illustrations/CC3000_adafruit.jpg)
   
-  This board seems discontinued, but i had one lying around and it is working fine with the Pico. I do not know if there are   alternatives for use together with the Pico.
+  This board seems discontinued, but i had one lying around and it is working fine with the Pico. I do not know if there are   alternatives for use together with the Pico. You might find it in aliexpress, ebay or similar.
+  
+  * [Buy CC3000 on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=CC3000+wifi)
+  * [Buy CC3000 on Ebay](http://www.ebay.com/sch/i.html?_nkw=CC3000+wifi)
 
 3. 2-channel relay module
 
@@ -30,9 +33,9 @@ much more detailed project description available there.
 
 5. A remote shutter cable for said DSLR
 
-6. An old Slide projector with remote controlled feed
+6. An old Slide projector with cable remote controlled feed (IR might work as well, if you can connect that to the relay with cables)
 
-7. Optional 5v DC powersource for driving the Pico and relays standalone, disconnected from USB
+7. Optional 3.7v - 5v DC powersource for driving the Pico and relays standalone disconnected from USB
 
 ### Basic instructions (to be updated)
 
@@ -40,22 +43,47 @@ Rip out the optics from the slide projector, bolt the projector to a board.
 
 Position and fasten a camera bracket in front of the projector.
 
-Wire the relay module to the Pico:
-  * GND to GND
-  * VOC to VBAT
-  * IN1 to A5
-  * IN2 to A6
+Wire the relay module to the Pico, be sure to have neat connections (preferably solder) everywhere.
+
+| Relay module | Espruino |
+| ------------ |:--------:|
+| GND          | GND      |
+| VOC          | VBAT     |
+| IN1          | A5       |
+| IN2          | A6       |
 
 Cut the cables to both remotes and connect the right cables to each relay.
 
-Which cables to fit where, you have to figure out your self as this might vary depending of
+Which cables to fit where from the relayes to the remotes, you have to figure out your self as this might vary depending of
 the configuration of the remote cables you are using.
 
-Wire up the CC3000 to the Pico: [instructions here](http://www.espruino.com/CC3000)
+Wire up the CC3000 to the Pico: [instructions here](http://www.espruino.com/CC3000),
+be sure to have neat connections (preferably solder) everywhere.
+
+| RCC3000   | Espruino   |
+| --------- |:----------:|
+| GND       | GND        |
+| 3v3       | Do not use |
+| VIN       | VBAT       |
+| CLK/SCK   | B3         |
+| DOUT/MISO | B4         |
+| DIN/MOSI  | B5         |
+| CS        | B6         |
+| EN/VBEN   | B7         |
+| IRQ       | B8         |
+
+Change 'WifiAccessPointName', 'WifiWPA2key' to your wifi networks name and key
 
 Flash js/script.js onto Pico with the [Espruino IDE](http://www.espruino.com/Web+IDE)
 
-Connect to Pico through http://1.2.3.4
+To persist script type save() and then hit enter in the left panel of the IDE console
+
+To manually start type onInit() a and then hit enter in the left panel of the IDE console, see that everything looks right in the left hand panel of the IDE
+
+Connect to Pico by opening a browser at the IP-address given in the left hand side of the 
+console after the string 'Server created at ' (eg http://105.21.363.87)
+
+You should now see this screen in that browser:
 
 ![Espruino Pico](/illustrations/screen.png)
 
