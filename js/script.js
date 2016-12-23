@@ -104,7 +104,3 @@ function onInit () {
 
 // Disconnect wifi, not used atm
 // wlan.disconnect()
-
-onInit()
-
-save()
