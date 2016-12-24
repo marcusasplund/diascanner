@@ -88,16 +88,19 @@ function onPageRequest (req, res) {
   res.end('</body></html>')
 }
 
-// Wifi connection, go to http://1.2.3.4
+// Wifi connection
 var wlan
 function onInit () {
   wlan = require('CC3000').connect()
+  // Do not forget to change 'WifiAccessPointName', 'WifiWPA2key' to your own wifi networks name and pw
   wlan.connect('WifiAccessPointName', 'WifiWPA2key', function (s) {
     if (s === 'dhcp') {
       require('http')
         .createServer(onPageRequest)
         .listen(80)
       console.log('Server created at ' + wlan.getIP().ip)
+      // Now you can open up a browser at the ip given above
+      // A page with the ui should show up
     }
   })
 }
