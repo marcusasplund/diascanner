@@ -72,7 +72,7 @@ be sure to have neat connections (preferably solder) everywhere.
 | EN/VBEN   | B7         |
 | IRQ       | B8         |
 
-Change 'WifiAccessPointName', 'WifiWPA2key' to your wifi networks name and key
+Paste contents from the file js/script.js in the right panel of the Espruino IDE, and change 'WifiAccessPointName', 'WifiWPA2key' to your wifi networks name and key
 
 Flash js/script.js onto Pico with the [Espruino IDE](http://www.espruino.com/Web+IDE)
 
