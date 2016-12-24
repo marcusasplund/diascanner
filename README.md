@@ -45,12 +45,12 @@ Position and fasten a camera bracket in front of the projector.
 
 Wire the relay module to the Pico, be sure to have neat connections (preferably solder) everywhere.
 
-| Relay module | Espruino |
-| ------------ | -------- |
-| GND          | GND      |
-| VOC          | VBAT     |
-| IN1          | A5       |
-| IN2          | A6       |
+| Relay module   | Espruino    |
+| -------------- | ----------- |
+| GND            | GND         |
+| VOC            | VBAT        |
+| IN1            | A5          |
+| IN2            | A6          |
 
 Cut the cables to both remotes and connect the right cables to each relay.
 
