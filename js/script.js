@@ -71,9 +71,9 @@ function startScanning () {
 // Simple ui for start, stop and setting number of slides
 function onPageRequest (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'})
-  res.write('<html><head><link rel="stylesheet" ' +
-  'href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /></head>' +
-  '<body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' + 
+  res.write('<html><head><meta content="width=device-width, initial-scale=1" name="viewport">' +
+  '<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" />' +
+  '</head><body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' + 
   '<input class="form-control" id="pictures" max="100" min="1" type="number" ' +
   'onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"' +
   'value="' + numberOfPics +'" /></label>' +
