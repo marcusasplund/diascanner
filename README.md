@@ -20,14 +20,14 @@ much more detailed project description available there.
   
   This board seems discontinued, but i had one lying around and it is working fine with the Pico. I do not know if there are   alternatives for use together with the Pico. You might find it in aliexpress, ebay or similar.
   
-  * [Buy CC3000 on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=CC3000+wifi)
-  * [Buy CC3000 on Ebay](http://www.ebay.com/sch/i.html?_nkw=CC3000+wifi)
+  * [Search for CC3000 on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=CC3000+wifi)
+  * [Search for CC3000 on Ebay](http://www.ebay.com/sch/i.html?_nkw=CC3000+wifi)
 
 3. 2-channel relay module
 
   ![2-channel relay module](/illustrations/relay.jpg)
-  * [Buy 2-channel relay module on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
-  * [Buy 2-channel relay module on Ebay](http://www.ebay.com/sch/i.html?_nkw=2+channel+relay+module)
+  * [Search for 2-channel relay module on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=2-channel+relay+module)
+  * [Search for 2-channel relay module on Ebay](http://www.ebay.com/sch/i.html?_nkw=2+channel+relay+module)
 
 4. A DSLR of your choice with a Macro
 
@@ -91,5 +91,5 @@ Start scanning
 ### Optional upgrade for the projector
 1. 50W led
 
-  * [Buy 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
-  * [Buy 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
+  * [Search for 50W led on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=50w+led+chip)
+  * [Search for 50W led on Ebay](http://www.ebay.com/sch/i.html?_nkw=50w+led+chip)
