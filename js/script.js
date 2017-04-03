@@ -72,8 +72,19 @@ function startScanning () {
 function onPageRequest (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'})
   res.write('<html><head><meta content="width=device-width, initial-scale=1" name="viewport">' +
-  '<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" />' +
-  '</head><body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' + 
+  '<style>*,:after,:before,input{box-sizing:inherit}button,input{height:3.8rem}' +
+  'html{box-sizing:border-box;font-size:62.5%}body{color:#606c76;' +
+  'font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1.6em;font-weight:300;letter-spacing:.01em;' +
+  'line-height:1.6}button,label{font-weight:700}button{background-color:#9b4dca;border:.1rem solid #9b4dca;' +
+  'border-radius:.4rem;color:#fff;cursor:pointer;display:inline-block;font-size:1.1rem;letter-spacing:.1rem;' +
+  'line-height:3.8rem;padding:0 3rem;text-align:center;text-decoration:none;text-transform:uppercase;white-space:nowrap}' +
+  '.button:focus,.button:hover{background-color:#606c76;border-color:#606c76;color:#fff;outline:0}' +
+  'input{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;' +
+  'border:.1rem solid #d1d1d1;border-radius:.4rem;box-shadow:none;padding:.6rem 1rem;width:100%}' +
+  'input:focus{border-color:#9b4dca;outline:0}label{display:block;font-size:1.6rem;margin-bottom:.5rem}' +
+  '.container{margin:0 auto;max-width:112rem;padding:0 2rem;position:relative;width:100%}' +
+  'button{margin-bottom:1rem}p{margin-top:0;margin-bottom:2.5rem}</style>' +
+  '</head><body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' +
   '<input class="form-control" id="pictures" max="100" min="1" type="number" ' +
   'onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"' +
   'value="' + numberOfPics +'" /></label>' +
