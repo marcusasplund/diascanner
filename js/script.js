@@ -1,4 +1,4 @@
-/* global digitalWrite, A5, A6, save */
+/* global digitalWrite, A5, A6 */
 /* eslint-disable no-unused-vars */
 
 // Flash this code onto Pico using Espruino IDE
@@ -86,13 +86,13 @@ function onPageRequest (req, res) {
   'button{margin-bottom:1rem}p{margin-top:0;margin-bottom:2.5rem}</style>' +
   '</head><body class="container"><h1>Speed scanner</h1><hr><label>Number of slides' +
   '<input class="form-control" id="pictures" max="100" min="1" type="number" ' +
-  'onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));"' +
-  'value="' + numberOfPics +'" /></label>' +
+  'onkeypress="return event.charCode === 0 || /d/.test(String.fromCharCode(event.charCode));"' +
+  'value="' + numberOfPics + '" /></label>' +
   '<button class="btn btn-success" id="start">Start</button>' +
   '<button class="btn btn-danger" id="stop">Stop</button>' +
   '<p>Slides scanned: <span id="scanned"></span></p>')
   res.write('<script>document.getElementById("pictures").addEventListener("input", ' +
-  'function () {numberOfPics = this.value ? this.value : ' + numberOfPics +';});' +
+  'function () {numberOfPics = this.value ? this.value : ' + numberOfPics + ';});' +
   'document.getElementById("start").addEventListener("click", startScanning, false);' +
   'document.getElementById("stop").addEventListener("click", stopScanning, false);' +
   '</script>')
