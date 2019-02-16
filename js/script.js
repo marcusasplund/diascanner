@@ -38,7 +38,7 @@ function openRelay (relay) {
 function takePicture () {
   setTimeout(function() {
     closeRelay(A6, takePictureButtonTreshold, false);
-    document.getElementById("scanned").innerHTML = numberOfScans;
+    // document.getElementById("scanned").innerHTML = numberOfScans;
   }, takePictureTreshold);
 }
 
@@ -98,8 +98,8 @@ function pageHandler(req, res) {
 
 // Wifi connection
 var wifi;
-var WIFI_NAME = "";
-var WIFI_OPTIONS = { password : "" };
+var WIFI_NAME = "YOUR WIFI NAME";
+var WIFI_OPTIONS = { password : "YOUR WIFI PASSWORD" };
 
 function onInit() {
   wifi = require("Wifi");
