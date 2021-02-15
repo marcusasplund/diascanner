@@ -8,6 +8,9 @@ Automatic speedscanner for slides with Espruino Pico
 A js-port of: [http://www.stockholmviews.com/speedscanner/](http://www.stockholmviews.com/speedscanner/),
 much more detailed project description available there. 
 
+## HEADS UP, this project is abandoned and only kept for reference.
+I ended up using the [Espruino WiFi](https://www.espruino.com/WiFi) instead of trying to get the CC3000 to work. Otherwise it is more or less the same.
+
 ## Hardware used
 
 1. [Espruino Pico](http://www.espruino.com/Pico) microcontroller
